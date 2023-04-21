@@ -1,0 +1,28 @@
+﻿{
+  "XPosition": 0,
+  "YPosition": 0,
+  "Width": 900,
+  "Height": 30,
+  "Size": 0,
+  "Style": 0,
+  "Bold": false,
+  "Italic": true,
+  "Strikeout": true,
+  "Underline": true,
+  "Name": "\u5F97\u610F\u9ED1",
+  "Unit": 3,
+  "SystemFontName": "",
+  "FontHeight": 34,
+  "SizeInPoints": 14,
+  "Color": {
+    "R": 0,
+    "G": 128,
+    "B": 0,
+    "A": 255,
+    "IsKnownColor": true,
+    "IsEmpty": false,
+    "IsNamedColor": true,
+    "IsSystemColor": false,
+    "Name": "Green"
+  }
+}

@@ -1,0 +1,46 @@
+﻿<Window x:Class="LedLyricWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LedLyricWPF"
+        mc:Ignorable="d"
+        Title="LED字幕显示系统" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="13*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" Height="30" HorizontalAlignment="Left" Name="menu1" VerticalAlignment="Top" Width="800">
+            <MenuItem Header="字幕管理" >
+                <MenuItem Header="加载字幕文件" Click="Load_Lyric_Click"/>
+                <MenuItem Header="字幕显示设置" Click="Load_Setting_Click"/>
+            </MenuItem>
+            <MenuItem Header="关于" />
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="1" Grid.Column="0" Content="显示字幕" Click="Show_Lyric_Click"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="关闭字幕" Click="Close_Lyric_Click"/>
+            <Button Grid.Row="1" Grid.Column="2" Content="保存字幕" Click="Save_Lyric_Click"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.Column="0" x:Name="lyricFiles" KeyUp="lyricFiles_KeyUp"/>
+            <TextBox Grid.Column="1" x:Name="lyricText" KeyUp="lyricText_KeyUp"/>
+        </Grid>
+
+
+    </Grid>
+
+</Window>
